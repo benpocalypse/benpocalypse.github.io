@@ -36,6 +36,7 @@ jobs:
       
     - name: Run Markerator
       run: |
+        ls
         dotnet run -t Bengineering -i index.md --favicon true -op About.md --posts true -pt News
         cd output
         
