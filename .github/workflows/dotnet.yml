@@ -1,0 +1,45 @@
+# This workflow will automate the publishing of a Markerator based website.
+
+name: Markerator
+
+on:
+  push:
+    branches:
+     - input
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout input branch
+      uses: actions/checkout@v3
+      with:
+        path: input
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+        
+    - name: Checkout Markerator
+      uses: actions/checkout@v3
+      with:
+        name: benpocalypse/Markerator
+
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --no-restore
+      
+    - name: Run Markerator
+      run: |
+        dotnet run -t Bengineering -i index.md --favicon true -op About.md --posts true -pt News
+        cd output
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: output
