@@ -27,6 +27,7 @@ jobs:
     - name: Checkout Markerator
       uses: actions/checkout@v3
       with:
+        path: .
         repository: benpocalypse/Markerator
 
     - name: Restore dependencies
