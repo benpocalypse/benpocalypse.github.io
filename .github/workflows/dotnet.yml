@@ -26,7 +26,7 @@ jobs:
     - name: Checkout Markerator
       uses: actions/checkout@v3
       with:
-        name: benpocalypse/Markerator
+        repository: benpocalypse/Markerator
 
     - name: Restore dependencies
       run: dotnet restore
