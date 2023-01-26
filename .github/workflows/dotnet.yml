@@ -21,11 +21,7 @@ jobs:
 
     - name: Investigate input directories
       run: |
-        ls -al
-        cd ..
-        ls -al
-        cd ..
-        ls -al
+        git checkout https://github.com/benpocalypse/Markerator.git .
       
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -46,11 +42,6 @@ jobs:
       
     - name: Run Markerator
       run: |
-        ls -al
-        cd ..
-        ls -al
-        cd ..
-        ls -al
         dotnet run -t Bengineering -i index.md --favicon true -op About.md --posts true -pt News
         cd output
         
