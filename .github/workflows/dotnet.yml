@@ -23,6 +23,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         path: input
+        ref: input
 
     - name: Investigate directories 1
       run: ls -al
@@ -31,8 +32,9 @@ jobs:
       uses: actions/checkout@v3
       with:
         path: output
+        ref: output
 
-    - name: Investigate directories again
+    - name: Investigate directories 2
       run: |
         ls -al
         cd output
@@ -57,13 +59,10 @@ jobs:
       run: |
         ls -al
         git status
-        git stash -u
-        git checkout output
-        git status
-        git pull
-        git status
-        git stash apply
-        git status
-        ls -al
         cd output
         ls -al
+        git status
+        git checkout output
+        git status
+        ls -al
+        
