@@ -34,7 +34,11 @@ jobs:
         path: output
 
     - name: Investigate directories again
-      run: ls -al
+      run: |
+        ls -al
+        cd output
+        ls -al
+        git status
       
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -54,11 +58,9 @@ jobs:
       run: |
         ls -al
         cd output
+        git status
+        git checkout output
         git pull
         git status
-        
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: output
-        directory: output
+        git push
+        git status
