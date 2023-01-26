@@ -21,7 +21,7 @@ jobs:
 
     - name: Investigate input directories
       run: |
-        git checkout https://github.com/benpocalypse/Markerator.git .
+        git clone https://github.com/benpocalypse/Markerator.git .
       
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
