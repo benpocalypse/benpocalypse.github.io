@@ -33,7 +33,7 @@ jobs:
         branch: output
         path: output
 
-    name: Investigate directories again
+    - name: Investigate directories again
       run: ls -al
       
     - name: Setup .NET
