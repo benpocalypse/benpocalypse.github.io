@@ -57,7 +57,7 @@ jobs:
       run: |
         ls -al
         git status
-        git stash
+        git stash -u
         git checkout output
         git status
         git pull
