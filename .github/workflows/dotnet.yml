@@ -62,7 +62,8 @@ jobs:
         cd output
         ls -al
         git status
-        git checkout output
+        git add *
+        git commit -m "Updated with Markerator automation"
+        git  push
         git status
         ls -al
-        
