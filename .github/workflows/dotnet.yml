@@ -13,18 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Clone Markerator and investigate directories
+      run: |
+        ls -al
+        git clone https://github.com/benpocalypse/Markerator.git .
+        ls -al
+
     - name: Checkout input branch
       uses: actions/checkout@v3
       with:
         path: input
-        set-safe-directory: false
 
-    - name: Investigate input directories
+    - name: Investigate directories again
       run: |
         ls -al
         cd ..
-        ls -al
-        git clone https://github.com/benpocalypse/Markerator.git
         ls -al
       
     - name: Setup .NET
