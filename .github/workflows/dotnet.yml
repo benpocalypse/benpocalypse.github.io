@@ -63,7 +63,11 @@ jobs:
         ls -al
         git status
         git add *
-        git commit -m "Updated with Markerator automation"
-        git  push
         git status
-        ls -al
+        
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Automated commit with Markerator
+        branch: output
+        repository: output
