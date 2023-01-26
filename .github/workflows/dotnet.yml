@@ -45,6 +45,16 @@ jobs:
       run: |
         dotnet run -t Bengineering -i index.md --favicon true -op About.md --posts true -pt News
         cd output
+
+    - name: Final directories investigation
+      run: |
+        ls -al
+        cd output
+        ls -al
+        cd ..
+        ls -al
+        cd ..
+        ls -al
         
     - name: Push changes
       uses: ad-m/github-push-action@master
