@@ -22,6 +22,8 @@ jobs:
     - name: Investigate input directories
       run: |
         ls -al
+        cd ..
+        ls -al
         git clone https://github.com/benpocalypse/Markerator.git
         ls -al
       
@@ -29,12 +31,6 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
-        
-    - name: Checkout Markerator
-      uses: actions/checkout@v3
-      with:
-        path: .
-        repository: benpocalypse/Markerator
 
     - name: Restore dependencies
       run: dotnet restore
