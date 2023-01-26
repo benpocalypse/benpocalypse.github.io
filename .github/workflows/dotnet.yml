@@ -54,11 +54,8 @@ jobs:
       run: |
         ls -al
         cd output
-        ls -al
-        cd ..
-        ls -al
-        cd ..
-        ls -al
+        git pull
+        git status
         
     - name: Push changes
       uses: ad-m/github-push-action@master
