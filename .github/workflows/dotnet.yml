@@ -25,8 +25,7 @@ jobs:
         path: input
 
     - name: Investigate directories 1
-      run: |
-        ls -al
+      run: ls -al
 
     - name: Checkout output branch
       uses: actions/checkout@v3
@@ -35,8 +34,7 @@ jobs:
         path: output
 
     name: Investigate directories again
-      run: |
-        ls -al
+      run: ls -al
       
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -50,8 +48,7 @@ jobs:
       run: dotnet build --no-restore
       
     - name: Run Markerator
-      run: |
-        dotnet run -t Bengineering -i index.md --favicon true -op About.md --posts true -pt News
+      run: dotnet run -t Bengineering -i index.md --favicon true -op About.md --posts true -pt News
 
     - name: Final directories investigation
       run: |
