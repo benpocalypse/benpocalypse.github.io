@@ -24,10 +24,18 @@ jobs:
       with:
         path: input
 
-    - name: Investigate directories again
+    - name: Investigate directories 1
       run: |
         ls -al
-        cd ..
+
+    - name: Checkout output branch
+      uses: actions/checkout@v3
+      with:
+        branch: output
+        path: output
+
+    name: Investigate directories again
+      run: |
         ls -al
       
     - name: Setup .NET
@@ -44,7 +52,6 @@ jobs:
     - name: Run Markerator
       run: |
         dotnet run -t Bengineering -i index.md --favicon true -op About.md --posts true -pt News
-        cd output
 
     - name: Final directories investigation
       run: |
@@ -60,3 +67,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         branch: output
+        path: output

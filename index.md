@@ -2,7 +2,7 @@
 <center><img src="images/bengineering_logo.png"></center>
 
 ## Hello there, friend 🤖
-Welcome to my cozy corner of the internet.! This is hopefully a place where useful things will be done, and documented. Failing that, at least it'll be a place that is fun.
+Welcome to my cozy corner of the internet. This is hopefully a place where useful things will be done, and documented. Failing that, at least it'll be a place that is fun.
 
 I make projects (both software and hardware) have thoughts on other folks projects, and generally like to share things. If any of that sounds the least bit interesting, then please, read on and do check out the rest of the site here.
 <br/>
