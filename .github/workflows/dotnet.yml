@@ -30,7 +30,6 @@ jobs:
     - name: Checkout output branch
       uses: actions/checkout@v3
       with:
-        branch: output
         path: output
 
     - name: Investigate directories again
@@ -56,11 +55,15 @@ jobs:
 
     - name: Final directories investigation
       run: |
-        ls -al
         cd output
+        ls -al
         git status
+        git stash
         git checkout output
+        git status
         git pull
+        git status
+        git stash apply
         git status
         git push
         git status
