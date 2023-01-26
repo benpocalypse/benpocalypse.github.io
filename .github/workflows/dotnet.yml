@@ -55,7 +55,6 @@ jobs:
 
     - name: Final directories investigation
       run: |
-        cd output
         ls -al
         git status
         git stash
@@ -65,5 +64,6 @@ jobs:
         git status
         git stash apply
         git status
-        git push
-        git status
+        ls -al
+        cd output
+        ls -al
