@@ -6,4 +6,6 @@ After much head scratching on thinking of a "clean" way to implement Rss feed ge
 
 I think the next big thing I'm going to tackle is adding the ability to generate multiple "posts" pages at the same time. So you could have "Projects," "News," and "Journal" all being generated at the same time, each one with it's own Rss feed generation. I also need to link to the Rss file in the actual generated website, but that will come in the future. 
 
-Update: there was a bug in the code I pushed that had the "postsTitle" hardcoded to "posts" in the index.html generation, so even though Markerator generated things correctly, it wouldn't link to them correctly.
+Update: There was a bug in the code I pushed that had the "postsTitle" hardcoded to "posts" in the index.html generation, so even though Markerator generated things correctly, it wouldn't link to them correctly. 
+
+Update 2: Make that 2 hardcoded bugs ¯\_(ツ)_/¯
