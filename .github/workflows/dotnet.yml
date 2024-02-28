@@ -53,7 +53,7 @@ jobs:
       run: dotnet build --no-restore
       
     - name: Run Markerator
-      run: dotnet run -t Bengineering -i index.md --favicon true -op About.md,Contact.md --posts true -pt News -u https://bengineeri.ng
+      run: dotnet run -t Bengineering -i index.md --favicon true -op About.md,Contact.md --posts true -pt News -u https://bengineeri.ng -rrs true -ri true
 
     - name: Final directories investigation
       run: |
