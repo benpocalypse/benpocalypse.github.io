@@ -78,8 +78,7 @@ jobs:
         ls -al
         cd output
         git branch
-        git checkout output
-        git branch
+        git branch -r
         ls -al
         git commit -m "Automated commit with Markerator"
         git push
