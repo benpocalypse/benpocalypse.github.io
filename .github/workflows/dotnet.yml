@@ -65,8 +65,10 @@ jobs:
         git branch
         cd output
         ls -al
-        git status
+        git branch
+        git checkout output
         git add *
+        git branch
         git status
         
     - name: Commit and push changes
