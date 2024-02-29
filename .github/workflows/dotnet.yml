@@ -43,7 +43,7 @@ jobs:
         ls -al
         cd output
         ls -al
-        git status
+        git branch
       
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -65,6 +65,7 @@ jobs:
         git branch
         cd output
         ls -al
+        git branch
         git branch -r
         git status
         git add *
