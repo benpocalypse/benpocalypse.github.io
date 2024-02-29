@@ -73,6 +73,7 @@ jobs:
       run: |
         git config user.name ${{ secrets.USERNAME }}
         git config user.email github-actions@github.com
+        ls -al
         cd output
         git branch
         git checkout output
