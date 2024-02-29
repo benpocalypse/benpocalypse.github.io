@@ -66,6 +66,8 @@ jobs:
         cd output
         ls -al
         git branch
+        git pull
+        git status
         git checkout output
         git add *
         git branch
