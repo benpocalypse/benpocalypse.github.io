@@ -69,8 +69,11 @@ jobs:
         git add *
         git status
         
-    - name: Commit changes
-      uses: EndBug/add-and-commit-action@v9
-      with:
-        commit_message: Automated commit with Markerator
-        new_branch: output
+    - name: Commit and push changes
+    - run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "Automated commit with Markerator"
+        git push
+        
