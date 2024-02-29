@@ -9,10 +9,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
+    runs-on: ubuntu-latest
 
     steps:
     - name: Clone Markerator and investigate directories
@@ -24,7 +22,6 @@ jobs:
     - name: Checkout input branch
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.TOKEN }}
         path: input
         ref: input
 
@@ -34,7 +31,6 @@ jobs:
     - name: Checkout output branch
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.TOKEN }}
         path: output
         ref: output
 
@@ -43,7 +39,7 @@ jobs:
         ls -al
         cd output
         ls -al
-        git branch
+        git status
       
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -62,25 +58,17 @@ jobs:
     - name: Final directories investigation
       run: |
         ls -al
-        git branch
+        git status
         cd output
         ls -al
-        git branch
-        git branch -r
         git status
         git add *
-        git branch
         git status
         
-    - name: Commit and push changes
-      run: |
-        git config user.name ${{ secrets.USERNAME }}
-        git config user.email github-actions@github.com
-        ls -al
-        cd output
-        git branch
-        git branch -r
-        ls -al
-        git commit -m "Automated commit with Markerator"
-        git push
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Automated commit with Markerator
+        branch: output
+        repository: output
         
