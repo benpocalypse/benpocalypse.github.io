@@ -70,8 +70,7 @@ jobs:
         git status
         
     - name: Commit changes
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: EndBug/add-and-commit-action@v9
       with:
         commit_message: Automated commit with Markerator
-        branch: output
-        create_branch: true
+        new_branch: output
