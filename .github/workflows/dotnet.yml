@@ -74,6 +74,8 @@ jobs:
         git config user.name ${{ secrets.USERNAME }}
         git config user.email github-actions@github.com
         git branch
+        git checkout output
+        git branch
         git commit -m "Automated commit with Markerator"
         git push
         
