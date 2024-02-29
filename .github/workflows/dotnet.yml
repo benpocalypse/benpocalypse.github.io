@@ -70,4 +70,3 @@ jobs:
       with:
         commit_message: Automated commit with Markerator
         branch: output
-        repository: output
