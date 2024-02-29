@@ -32,6 +32,7 @@ jobs:
     - name: Checkout output branch
       uses: actions/checkout@v3
       with:
+        token: ${{ secrets.TOKEN }}
         path: output
         ref: output
 
