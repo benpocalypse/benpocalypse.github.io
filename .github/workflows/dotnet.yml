@@ -62,7 +62,7 @@ jobs:
     - name: Final directories investigation
       run: |
         ls -al
-        git status
+        git branch
         cd output
         ls -al
         git status
@@ -74,8 +74,10 @@ jobs:
         git config user.name ${{ secrets.USERNAME }}
         git config user.email github-actions@github.com
         git branch
-        git checkout origin/output
+        git checkout output
         git branch
+        ls -al
+        cd output
         git commit -m "Automated commit with Markerator"
         git push
         
