@@ -73,11 +73,11 @@ jobs:
       run: |
         git config user.name ${{ secrets.USERNAME }}
         git config user.email github-actions@github.com
+        cd output
         git branch
         git checkout output
         git branch
         ls -al
-        cd output
         git commit -m "Automated commit with Markerator"
         git push
         
