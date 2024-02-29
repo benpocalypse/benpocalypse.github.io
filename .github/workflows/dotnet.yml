@@ -70,7 +70,7 @@ jobs:
         git status
         
     - name: Commit and push changes
-    - run: |
+      run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
