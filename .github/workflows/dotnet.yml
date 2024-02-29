@@ -16,7 +16,7 @@ jobs:
     - name: Clone Markerator and investigate directories
       run: |
         ls -al
-        git clone https://github.com/benpocalypse/Markerator.git .
+        git clone git@github.com/benpocalypse/Markerator.git .
         ls -al
 
     - name: Checkout input branch
