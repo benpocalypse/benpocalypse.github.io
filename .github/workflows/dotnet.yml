@@ -70,3 +70,5 @@ jobs:
       with:
         commit_message: Automated commit with Markerator
         branch: output
+        create_branch: true
+        repository: .
