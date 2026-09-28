@@ -20,7 +20,7 @@ jobs:
         ls -al
 
     - name: Checkout input branch
-      uses: actions/checkout@v3
+      uses: actions/checkout@v7
       with:
         path: input
         ref: input
@@ -29,7 +29,7 @@ jobs:
       run: ls -al
 
     - name: Checkout output branch
-      uses: actions/checkout@v3
+      uses: actions/checkout@v7
       with:
         path: output
         ref: output
@@ -42,7 +42,7 @@ jobs:
         git status
       
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v6
       with:
         dotnet-version: 10.0.x
 
