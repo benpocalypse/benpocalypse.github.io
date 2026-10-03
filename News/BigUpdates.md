@@ -10,3 +10,5 @@ I spent a bunch of hours over the last few days finally giving the Markerator co
  - User specified pagination for Posts/News/Updates sections. This allows a user to break the overview page by the specified level of pagination. For example, if you have 25 Posts, and you specify a pagination of 10, you'd end up with 3  pages that are linked together showing 10 posts per page.
 
 My next big push is going to be for some new CSS themes, as well as documentation of the current CSS format to allow for easier end user CSS theme creation. Onward towards v1.0.0!
+
+UPDATE: There was a bug in yesterday's Markerator commit that broke CSS handling. I've fixed this and added more unit tests to verify the functionality.
