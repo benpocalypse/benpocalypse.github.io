@@ -15,4 +15,4 @@ UPDATE: There was a bug in yesterday's Markerator commit that broke CSS handling
 
 UPDATE 2: There are still more bugs. This is starting to get complicated. Hopefully this round of changes takes care of them. Maybe not though...
 
-UPDATE 3: Third times a charm, right?
+UPDATE 3: Third times a charm, right? Yeah, no.
