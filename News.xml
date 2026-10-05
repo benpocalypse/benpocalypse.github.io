@@ -5,59 +5,59 @@
     <link>https://bengineeri.ng/News.html</link>
     <description>Latest News posts</description>
     <item>
-      <title>01/02/2024</title>
-      <link>https://bengineeri.ng/News/2024.html</link>
-      <guid>https://bengineeri.ng/News/2024.html</guid>
-      <pubDate>Mon, 05 Oct 2026 13:08:04 GMT</pubDate>
-      <description>Yet again, it&#39;s been a very, very long time since I updated my site.</description>
-    </item>
-    <item>
-      <title>06/14/2023</title>
-      <link>https://bengineeri.ng/News/Activity.html</link>
-      <guid>https://bengineeri.ng/News/Activity.html</guid>
-      <pubDate>Mon, 05 Oct 2026 13:08:04 GMT</pubDate>
-      <description>It&#39;s been awhile, and I wanted to finally post an update.</description>
-    </item>
-    <item>
-      <title>10/01/2026</title>
+      <title>BigUpdates</title>
       <link>https://bengineeri.ng/News/BigUpdates.html</link>
       <guid>https://bengineeri.ng/News/BigUpdates.html</guid>
-      <pubDate>Mon, 05 Oct 2026 13:08:04 GMT</pubDate>
-      <description>I spent a bunch of hours over the last few days finally giving the Markerator codebase the love it deserves.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <description>I spent a bunch of hours over the last few days finally giving the Markerator codebase the love it deserves. The version I just pushed includes the following changes:</description>
     </item>
     <item>
-      <title>09/28/2026</title>
+      <title>LongTime</title>
       <link>https://bengineeri.ng/News/LongTime.html</link>
       <guid>https://bengineeri.ng/News/LongTime.html</guid>
-      <pubDate>Mon, 05 Oct 2026 13:08:04 GMT</pubDate>
-      <description>As with most people, life happens.</description>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+      <description>As with most people, life happens. Not a day has gone by that I haven&#39;t thought about my website, and Markerator. I always intend to update them.</description>
     </item>
     <item>
-      <title>08/02/2023</title>
-      <link>https://bengineeri.ng/News/MyBirthday.html</link>
-      <guid>https://bengineeri.ng/News/MyBirthday.html</guid>
-      <pubDate>Mon, 05 Oct 2026 13:08:04 GMT</pubDate>
-      <description>I&#39;ve been busy as usual, but I finally snuck in some time for some Markerator work before my birthday.</description>
-    </item>
-    <item>
-      <title>02/17/2024</title>
-      <link>https://bengineeri.ng/News/RssHasLanded.html</link>
-      <guid>https://bengineeri.ng/News/RssHasLanded.html</guid>
-      <pubDate>Mon, 05 Oct 2026 13:08:04 GMT</pubDate>
-      <description>After much head scratching on thinking of a &quot;clean&quot; way to implement Rss feed generation in Markerator, I&#39;ve finally pushed the code to GitHub that does it.</description>
-    </item>
-    <item>
-      <title>02/28/2024</title>
+      <title>RssLinksAreHere</title>
       <link>https://bengineeri.ng/News/RssLinksAreHere.html</link>
       <guid>https://bengineeri.ng/News/RssLinksAreHere.html</guid>
-      <pubDate>Mon, 05 Oct 2026 13:08:04 GMT</pubDate>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
       <description>After my last post about Rss generation being functional finally, this update to Markerator exposes links to the generated Rss in the generated webpages.</description>
     </item>
     <item>
-      <title>01/25/2023</title>
+      <title>RssHasLanded</title>
+      <link>https://bengineeri.ng/News/RssHasLanded.html</link>
+      <guid>https://bengineeri.ng/News/RssHasLanded.html</guid>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate>
+      <description>After much head scratching on thinking of a &quot;clean&quot; way to implement Rss feed generation in Markerator, I&#39;ve finally pushed the code to GitHub that does it.</description>
+    </item>
+    <item>
+      <title>2024</title>
+      <link>https://bengineeri.ng/News/2024.html</link>
+      <guid>https://bengineeri.ng/News/2024.html</guid>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 GMT</pubDate>
+      <description>Yet again, it&#39;s been a very, very long time since I updated my site. However, this time, I have a reason!</description>
+    </item>
+    <item>
+      <title>MyBirthday</title>
+      <link>https://bengineeri.ng/News/MyBirthday.html</link>
+      <guid>https://bengineeri.ng/News/MyBirthday.html</guid>
+      <pubDate>Wed, 02 Aug 2023 00:00:00 GMT</pubDate>
+      <description>I&#39;ve been busy as usual, but I finally snuck in some time for some Markerator work before my birthday.</description>
+    </item>
+    <item>
+      <title>Activity</title>
+      <link>https://bengineeri.ng/News/Activity.html</link>
+      <guid>https://bengineeri.ng/News/Activity.html</guid>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 GMT</pubDate>
+      <description>It&#39;s been awhile, and I wanted to finally post an update.</description>
+    </item>
+    <item>
+      <title>Welcome</title>
       <link>https://bengineeri.ng/News/Welcome.html</link>
       <guid>https://bengineeri.ng/News/Welcome.html</guid>
-      <pubDate>Mon, 05 Oct 2026 13:08:04 GMT</pubDate>
+      <pubDate>Wed, 25 Jan 2023 00:00:00 GMT</pubDate>
       <description>The official first Bengineering post has arrived.</description>
     </item>
   </channel>
