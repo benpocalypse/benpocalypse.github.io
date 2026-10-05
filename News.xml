@@ -5,6 +5,13 @@
     <link>https://bengineeri.ng/News.html</link>
     <description>Latest News posts</description>
     <item>
+      <title>New CSS Themes</title>
+      <link>https://bengineeri.ng/News/NewThemes.html</link>
+      <guid>https://bengineeri.ng/News/NewThemes.html</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+      <description>I&#39;ve added 3 new example CSS themes to the Markerator repo. One of them is a dark variant of the current default theme, another is a Blue theme in both light and dark variants.</description>
+    </item>
+    <item>
       <title>Finally, some big Markerator Updates</title>
       <link>https://bengineeri.ng/News/BigUpdates.html</link>
       <guid>https://bengineeri.ng/News/BigUpdates.html</guid>
