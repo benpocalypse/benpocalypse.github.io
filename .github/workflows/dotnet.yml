@@ -70,7 +70,7 @@ jobs:
         cd output
         ls -al
         git status
-        git add -A
+        git add . --force
         git status
         
     - name: Commit changes
