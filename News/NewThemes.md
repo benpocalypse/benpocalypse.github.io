@@ -8,3 +8,5 @@ These will be detailed in their usage in the upcoming detailed documentation and
 UPDATE: I had to update the dotnet.yml file to manually add the /css/ folder upon output.
 
 UPDATE 2: It turns out git wasn't adding untracked subfolders and files. I've once again updated the yaml file to include these untracked folders/files.
+
+UPDATE 3: I think the problem was in the search paths that Markerator was looking for on input. I've broadened this and hopefully this will be the final fix for specifying themes on the CLI.
