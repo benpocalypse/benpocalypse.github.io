@@ -10,3 +10,5 @@ UPDATE: I had to update the dotnet.yml file to manually add the /css/ folder upo
 UPDATE 2: It turns out git wasn't adding untracked subfolders and files. I've once again updated the yaml file to include these untracked folders/files.
 
 UPDATE 3: I think the problem was in the search paths that Markerator was looking for on input. I've broadened this and hopefully this will be the final fix for specifying themes on the CLI.
+
+UPDATE 4: It turns out that the `-c` option was being interpretted by MSBuild, and not by Markerator, so I updated the yaml file to pass the parameter to Markerator correctly.
