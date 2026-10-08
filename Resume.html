@@ -22,10 +22,17 @@
 <meta name="twitter:url" value="https://bengineeri.ng/Resume.html" />
 
 </head>
-<body>
-  <div class="navigation-title">
-    <a href="/">Bengineering</a>
-  </div>
+<body id="theme_default">
+  <input type="radio" name="mode" id="mode_light" value="light" class="mode-input" checked="checked" />
+  <input type="radio" name="mode" id="mode_dark" value="dark" class="mode-input" />
+  <div class="color-scheme-wrapper">
+    <div class="navigation-title">
+      <a href="/">Bengineering</a>
+      <div class="mode-toggle">
+        <label for="mode_light" class="mode-label">light</label>
+        <label for="mode_dark" class="mode-label">dark</label>
+      </div>
+    </div>
     <div class="navigation">
       <a href="/News.html">News</a>
       <a href="/About.html">About</a>
@@ -33,12 +40,13 @@
       <a href="/Resume.html">Resume</a>
     </div>
 
-  <div class="content">
+    <div class="content">
 <h2 id="my-current-resume">My current Resume</h2>
 <p>I am accomplished Principal Software Engineer with 20+ years of experience across a variety of tech stacks both big and small. I am currently looking for full-time employment either remote (with travel) or something on-site in the greater Western New York area (Erie, PA to Buffalo, NY.)</p>
 <p><a href="files/BFoote-Resume.pdf">Here is a copy of my current Resume/CV</a>.</p>
 <p>Feel free to contact me if you think I would be a good fit for your team.</p>
 
+    </div>
   </div>
 </body>
 </html>
