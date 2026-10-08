@@ -1,0 +1,280 @@
+/* ============================================================
+   PastelOrange — light/dark with radio-based mode toggle
+   A pastel orange light theme with a deep burnt-orange accent,
+   and a warm charcoal dark variant.
+   ============================================================ */
+
+/* ---- Default (light) ---- */
+.color-scheme-wrapper {
+    --bg: #fdf0e2;               /* very pale peach */
+    --bg-nav: #fbe4cc;           /* slightly warmer, for the nav band */
+    --bg-dropdown: #fff8f0;
+    --bg-dropdown-hover: #f7d9b8;
+    --text: #3d2a1c;             /* deep cocoa — ~11.5:1 on #fdf0e2 */
+    --text-heading: #5a3a20;     /* ~8.8:1 on #fdf0e2 */
+    --text-footer: #6b4a2e;      /* ~7.2:1 on #fbe4cc */
+    --text-disabled: #b39a82;
+    --accent: #a3460f;           /* burnt orange — ~6.8:1 on #fdf0e2 */
+    --accent-hover: #6e2e08;
+    --accent-contrast: #fdf0e2;
+    --border: #e8c9a8;
+    --border-subtle: #f2dcc3;
+    --shadow: rgba(90, 58, 32, 0.2);
+
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* ---- System prefers dark ---- */
+@media (prefers-color-scheme: dark) {
+    .color-scheme-wrapper {
+        --bg: #241a12;
+        --bg-nav: #2c2016;
+        --bg-dropdown: #2c2016;
+        --bg-dropdown-hover: #3d2a1c;
+        --text: #ecdccb;         /* ~12.4:1 on #241a12 */
+        --text-heading: #f5e6d3; /* ~14.6:1 on #241a12 */
+        --text-footer: #b39a82;  /* ~6.1:1 on #2c2016 */
+        --text-disabled: #6b5540;
+        --accent: #f0a874;       /* ~8.4:1 on #241a12 */
+        --accent-hover: #ffd9b3;
+        --accent-contrast: #241a12;
+        --border: #4a3624;
+        --border-subtle: #35271a;
+        --shadow: rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* ---- User explicitly picked dark ---- */
+#mode_dark:checked ~ .color-scheme-wrapper {
+    --bg: #241a12;
+    --bg-nav: #2c2016;
+    --bg-dropdown: #2c2016;
+    --bg-dropdown-hover: #3d2a1c;
+    --text: #ecdccb;
+    --text-heading: #f5e6d3;
+    --text-footer: #b39a82;
+    --text-disabled: #6b5540;
+    --accent: #f0a874;
+    --accent-hover: #ffd9b3;
+    --accent-contrast: #241a12;
+    --border: #4a3624;
+    --border-subtle: #35271a;
+    --shadow: rgba(0, 0, 0, 0.6);
+}
+
+/* ---- User explicitly picked light, overriding a dark system preference ---- */
+#mode_light:checked ~ .color-scheme-wrapper {
+    --bg: #fdf0e2;
+    --bg-nav: #fbe4cc;
+    --bg-dropdown: #fff8f0;
+    --bg-dropdown-hover: #f7d9b8;
+    --text: #3d2a1c;
+    --text-heading: #5a3a20;
+    --text-footer: #6b4a2e;
+    --text-disabled: #b39a82;
+    --accent: #a3460f;
+    --accent-hover: #6e2e08;
+    --accent-contrast: #fdf0e2;
+    --border: #e8c9a8;
+    --border-subtle: #f2dcc3;
+    --shadow: rgba(90, 58, 32, 0.2);
+}
+
+/* ---- Structural rules ---- */
+
+.navigation-title {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    padding-left: 40%;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-nav);
+}
+
+.navigation-title a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navigation {
+    overflow: hidden;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    right: 0;
+    padding-left: 40%;
+    align-items: center;
+    background-color: var(--bg-nav);
+}
+
+.navigation a {
+    float: left;
+    color: var(--accent);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation a:hover { color: var(--accent-hover); }
+
+/* ---- Toggle ---- */
+
+.mode-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.mode-toggle {
+    display: flex;
+    gap: 4px;
+}
+
+.mode-label {
+    cursor: pointer;
+    padding: 6px 12px;
+    color: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 14px;
+    user-select: none;
+}
+
+.mode-label:hover {
+    color: var(--accent-hover);
+    border-color: var(--accent);
+}
+
+#mode_light:checked ~ .color-scheme-wrapper label[for="mode_light"],
+#mode_dark:checked ~ .color-scheme-wrapper label[for="mode_dark"] {
+    background-color: var(--accent);
+    color: var(--accent-contrast);
+    border-color: var(--accent);
+}
+
+/* ---- Content, tables, dropdowns ---- */
+
+table, th, td {
+    border: 0px solid var(--border-subtle);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.dropdownbutton {
+    background-color: var(--accent);
+    color: var(--accent-contrast);
+    font-size: 16px;
+    padding: 6px;
+    padding-right: 40px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-dropdown);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px var(--shadow);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--accent);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--bg-dropdown-hover);
+}
+
+.dropdown:hover .dropdown-content { display: block; }
+
+.content {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.content a { color: var(--accent); text-decoration: none; }
+.content a:hover { color: var(--accent-hover); }
+
+/* ---- Pagination ---- */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+}
+
+.pagination-pages { display: flex; gap: 0.5rem; }
+
+.pagination a,
+.pagination-current,
+.pagination-prev,
+.pagination-next {
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.pagination-current {
+    background: var(--accent);
+    color: var(--accent-contrast);
+    border-color: var(--accent);
+    font-weight: bold;
+}
+
+.pagination .disabled {
+    color: var(--text-disabled);
+    border-color: var(--border-subtle);
+    cursor: not-allowed;
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--text-heading); }
+
+body { margin-left: 0; padding-top: 0; }
+
+footer {
+    text-align: center;
+    padding: 6px;
+    background-color: var(--bg-nav);
+    color: var(--text-footer);
+    font-size: 12px;
+}
+

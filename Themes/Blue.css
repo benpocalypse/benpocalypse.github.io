@@ -86,20 +86,22 @@
     overflow: hidden;
     position: fixed;
     top: 0;
-    margin-left: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
     padding-left: 40%;
-    width: 100%;
+    padding-right: 16px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--bg-nav);
 }
 
 .navigation-title a {
-    float: left;
     color: var(--accent);
-    text-align: center;
-    padding: 10px 16px;
     text-decoration: none;
     font-size: 22px;
+    /* No float needed — flexbox handles placement. */
 }
 
 .navigation {
@@ -139,11 +141,9 @@
 }
 
 .mode-toggle {
-    float: right;
-    margin-right: 16px;
-    margin-top: 12px;
     display: flex;
     gap: 4px;
+    /* No float, no margin-top — flexbox centers it vertically. */
 }
 
 .mode-label {
