@@ -58,7 +58,7 @@ jobs:
         ls -al input
         ls -al input/Themes || true
         ls -al input/css || true
-        dotnet run -- -t Bengineering -i index.md --favicon true -op About.md,Contact.md,Resume.md --posts true -pt News -u https://bengineeri.ng -rss true -ri true -pp 10 -c Themes/Blue.css
+        dotnet run -- -t Bengineering -i index.md --favicon true -op About.md,Contact.md,Resume.md --posts true -pt News -u https://bengineeri.ng -rss true -ri true -pp 10
         echo "--- Output directory after generation ---"
         ls -al output
         ls -al output/css || true
