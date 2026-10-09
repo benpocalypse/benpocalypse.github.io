@@ -1,5 +1,4 @@
-## 
-<center><img src="images/bengineering_logo.png"></center>
+<a href="https://bengineeri.ng">![Bengineering Logo](images/bengineering_logo.png)</a>
 
 ## Hello there, friend 🤖
 Welcome to my cozy corner of the internet. This is hopefully a place where useful things will be done, and documented. Failing that, at least it'll be a place that is fun.
