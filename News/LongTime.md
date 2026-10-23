@@ -3,7 +3,7 @@
 ## It's been Awhile
 As with most people, life happens. Not a day has gone by that I haven't thought about my website, and Markerator. I always intend to update them.
 
-<img src="../images/skeleton.jpg" alt="Me in front of my computer" />
+![Me in front of my computer](../images/skeleton.jpg)
 
 Not to complain, but this has been the most difficult year of my entire life. I was laid off from my job at the end of February, and have been trying to hustle to find another one ever since. You'd think this would give me copious amounts of time to work on coding projects, but that turns out to not be the case. I've probably never been busier in my life. There are countless things I'd been putting off because we had been in *"crunch mode"* at work for nearly a year.
 
